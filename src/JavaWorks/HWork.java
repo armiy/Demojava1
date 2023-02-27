@@ -27,7 +27,7 @@ public class HWork {
     }
 
     public void printDecreasingAndIncreasingNumbersTriangle() {
-        // printing mixed numbers in triangle 4 steps - print 1 to 5 in line, print the numbers in
+        // printing 2 number patterns - in a triangle & inverted triangle side by side
         int i, j, n=5;
         for (i = 1; i <= n; i++) {
             System.out.println();
@@ -88,6 +88,28 @@ public class HWork {
         System.out.println();// printing space between functions/methods
         febnoacci();
 
+        System.out.println();//printing space between methods
+        obj1.maxMin();
+
+
+
+
+
+    }
+    public void maxMin(){
+        int[] arr = {2,6,1,45,10,12,23,54};
+        int max = arr[2];
+        int min = arr[2];
+        int i , j;
+        for( i = 0; i< arr.length;i++){
+            if (arr[i] > max){
+                max= arr[i];
+            }
+            if(arr[i]<min){
+                min = arr[i];
+            }
+        }
+        System.out.println("The maximum number is "+max+" and "+"The minimum is "+min);
 
     }
 
