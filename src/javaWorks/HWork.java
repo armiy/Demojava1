@@ -91,7 +91,8 @@ public class HWork {
         System.out.println();//printing space between methods
         obj1.maxMin();
         moreNumberPattern();
-
+        System.out.println();
+        obj1.sumOfNumbersInArray();
 
     }
     public void maxMin(){
@@ -124,8 +125,34 @@ public class HWork {
             for(j=i-1;j>=1;j--){
                 System.out.print(j);
             }
+        }for(i= 1;i<=5;i++){
+            System.out.println();
+            for(j=n-1;j>=i;j--){
+                System.out.print(" ");
+            }
+            for(j=1;j<=i;j++){
+                System.out.print(j);
+            }
+            for(j=i-1;j>=1;j--){
+                System.out.print(j);
+            }
+    }
+
+    }
+    public void sumOfNumbersInArray(){
+        int [] arr = {1,3,5,6,78,56,23,5};
+        int i,j,sum=0;
+        for(i=1;i<arr.length;i++){
+            sum+=arr[i];
+            System.out.print(arr[i]);
+            if(i<arr.length-1){
+                System.out.print("+");
+            }
         }
+        System.out.println("= "+sum);
+    }
+
     }
 
 
-}
+
