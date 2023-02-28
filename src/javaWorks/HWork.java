@@ -1,4 +1,4 @@
-package JavaWorks;
+package javaWorks;
 
 public class HWork {
     public static void sumOfNumbers() {
@@ -90,9 +90,7 @@ public class HWork {
 
         System.out.println();//printing space between methods
         obj1.maxMin();
-
-
-
+        moreNumberPattern();
 
 
     }
@@ -111,6 +109,22 @@ public class HWork {
         }
         System.out.println("The maximum number is "+max+" and "+"The minimum is "+min);
 
+    }
+    public static void moreNumberPattern(){
+        // printing in decreasing pattern triangle
+        int i, j, n=5;
+        for(i=n;i>=1;i--){
+            System.out.println();
+            for(j=n;j>=i;j--){
+                System.out.print(" ");
+            }
+            for(j=1;j<=i;j++){
+                System.out.print(j);
+            }
+            for(j=i-1;j>=1;j--){
+                System.out.print(j);
+            }
+        }
     }
 
 
