@@ -1,5 +1,8 @@
 package javaWorks;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class HWork {
     public static void sumOfNumbers() {
         int n = 5;
@@ -74,27 +77,7 @@ public class HWork {
 
     }
 
-    public static void main(String[] args) {
-        sumOfNumbers();
-        HWork obj1 = new HWork();
-        obj1.printDecreasingAndIncreasingNumbersTriangle();
-        System.out.println(); // printing space between functions/methods
 
-        obj1.printNumbersInvertedTriangle();
-
-        System.out.println();// printing space between functions/methods
-        printNumbersTriangle();
-
-        System.out.println();// printing space between functions/methods
-        febnoacci();
-
-        System.out.println();//printing space between methods
-        obj1.maxMin();
-        moreNumberPattern();
-        System.out.println();
-        obj1.sumOfNumbersInArray();
-
-    }
     public void maxMin(){
         int[] arr = {2,6,1,45,10,12,23,54};
         int max = arr[2];
@@ -150,6 +133,39 @@ public class HWork {
             }
         }
         System.out.println("= "+sum);
+    }public static void divisor(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("please enter a number and I will give you its divisor\n");
+        int num = input.nextInt();
+        ArrayList<Integer> lis = new ArrayList<Integer>();
+        for(int i =1; i<=num;i++){
+            if(num%i==0){
+                lis.add(i);
+            }
+        }
+        System.out.println("The divisor of "+num+" are "+lis);
+    }
+    public static void main(String[] args) {
+        sumOfNumbers();
+        HWork obj1 = new HWork();
+        obj1.printDecreasingAndIncreasingNumbersTriangle();
+        System.out.println(); // printing space between functions/methods
+
+        obj1.printNumbersInvertedTriangle();
+
+        System.out.println();// printing space between functions/methods
+        printNumbersTriangle();
+
+        System.out.println();// printing space between functions/methods
+        febnoacci();
+
+        System.out.println();//printing space between methods
+        obj1.maxMin();
+        moreNumberPattern();
+        System.out.println();
+        obj1.sumOfNumbersInArray();
+        divisor();
+
     }
 
     }
